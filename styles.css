@@ -1,0 +1,166 @@
+/* Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #262626;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #262626;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #b117f8;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 90px;
+    background-color: #373737;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.cta-buttons .btn {
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: #b117f8;
+    color: #fff;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.cta-buttons .btn.secondary {
+    background-color: #373737;
+    color: #b117f8;
+    border: 1px solid #b117f8;
+}
+
+.hero-image img {
+    max-width: 350px;
+    border-radius: 25px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 90px;
+    background-color: #f8f8f8;
+    color: #b117f8;
+}
+
+.feature {
+    text-align: center;
+    max-width: 250px;
+}
+
+.feature img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 30px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .cta-buttons .btn {
+        padding: 10px 20px;
+    }
+
+    .hero-image img {
+        max-width: 250px;
+    }
+
+    .features {
+        padding: 40px 20px;
+    }
+
+    .feature {
+        max-width: 100%;
+    }
+}
